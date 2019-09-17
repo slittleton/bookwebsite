@@ -1,0 +1,21 @@
+:root{
+  --backcolor: #000000;
+  --font-color1: #d4d4d4; 
+  --font-color2: #4781ff; 
+  --font-color3: #bad424; 
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: var(--font-color2);
+  font-family: boogey;
+  font-size: 1.5rem;
+  background-color: var(--backcolor);
+}
+@font-face {
+  font-family: 'boogey';
+  src: url(../assets/fonts/Boogeyman_Font_2.2.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
