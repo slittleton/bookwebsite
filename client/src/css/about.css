@@ -1,0 +1,26 @@
+.about{
+  display:flex;
+  justify-content: center;
+
+}
+.about-container{
+  width: 75%;
+
+  display:flex;
+}
+.authors{
+  color: var(--font-color3);
+  font-size:2rem;
+  text-align:center;
+  padding:4rem;
+}
+.title{
+  font-size:4rem;
+}
+.subtitle{
+  font-size: 3rem;
+}
+.authors-img{
+  border-radius:50%;
+  border:8px solid var(--font-color2);
+}

@@ -21,7 +21,6 @@ const Home = React.forwardRef((props, homeRef) => {
         <div className="covers">
         <img src={cover} alt="" className="cover" />
         <img src={back} alt="" className="cover" />
-
         </div>
 
         <div className="border">

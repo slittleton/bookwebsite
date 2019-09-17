@@ -1,9 +1,11 @@
 .menu{
-  
+
   display: flex;
   justify-content: center;
 }
 .menu-bar{
+  background-color: black;
+  width: 100%;
   position: fixed;
 }
 .list{
