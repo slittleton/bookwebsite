@@ -1,0 +1,22 @@
+.shop{
+  color:  var(--font-color3);
+  text-align: center;
+}
+.text-container{
+  display:flex;
+  justify-content:center;
+  text-align: center;
+}
+.shop-text{
+  margin: 4rem;
+  font-size:2.25rem;
+  max-width: 35rem;
+  display:inline;
+}
+.shop-icon{
+  width:40px;
+  height: auto;
+  vertical-align: center;
+
+  border-radius:50%;
+}
