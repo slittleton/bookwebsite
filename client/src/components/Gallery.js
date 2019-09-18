@@ -3,10 +3,19 @@ import "../css/gallery.css";
 
 const API = process.env.REACT_APP_API_URL;
 
-let pageNums = Array.from(Array(38).keys());
+let pageNums = Array.from(Array(39).keys());
 
 const Gallery = React.forwardRef((props, galleryRef) => {
   const [pageNum, setPageNum] = useState(0);
+
+  const pageChange = val => e => {
+    if (val === "up") {
+      if (pageNum <= 37) setPageNum(pageNum + 1);
+    }
+    if (val === "down") {
+      if (pageNum >= 1) setPageNum(pageNum - 1);
+    }
+  };
 
   return (
     <div className="gallery" ref={galleryRef}>
@@ -20,8 +29,16 @@ const Gallery = React.forwardRef((props, galleryRef) => {
         </div>
       </div>
 
-      <div className="main-img">
-        <img src={`${API}/pages/${pageNum}.jpg`} alt="page" />
+      <div className="main-img-container">
+        <img src={`${API}/pages/${pageNum}.jpg`} alt="page" className="main-img"/>
+      </div>
+
+      <div className="select-box">
+        <div className="page-direction">
+          <div className="page-select" onClick={pageChange("down")}>{`<-`}</div>
+          <div className="page-num">{pageNum + 1}</div>
+          <div className="page-select" onClick={pageChange("up")}>{`->`}</div>
+        </div>
       </div>
 
       <div className="img-nav-container">
@@ -30,12 +47,12 @@ const Gallery = React.forwardRef((props, galleryRef) => {
             {pageNums.map(num => {
               return (
                 <div
+                  key={num}
                   className="page"
                   onClick={() => {
                     setPageNum(num);
                   }}
                 >
-                  
                   <img
                     src={`${API}/pages/${num}.jpg`}
                     alt="page"

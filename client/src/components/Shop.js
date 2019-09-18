@@ -11,7 +11,7 @@ const Shop = React.forwardRef((props, shopRef) => {
       <div className="text-container">
         <div className="shop-text">
           If you would like to purchase a physical copy of The Boogeyman
-          Investivation you can find it on{" "}
+          Investigation you can find it on{" "}
           <a
             className="link"
             href="https://www.amazon.com/Boogeyman-Investigation-Scott-Littleton-ebook/dp/B072MWK7DY/"

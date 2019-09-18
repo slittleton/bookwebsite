@@ -5,7 +5,6 @@
 }
 .about-container{
   width: 75%;
-
   display:flex;
 }
 .authors{
@@ -14,8 +13,13 @@
   text-align:center;
   padding:4rem;
 }
-
+.img-container{
+  width:30rem;
+  margin-top: 10rem;
+}
 .authors-img{
+
   border-radius:50%;
   border:8px solid var(--font-color2);
+
 }

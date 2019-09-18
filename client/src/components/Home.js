@@ -9,11 +9,12 @@ import back from "../assets/img/boogey-back.png";
 const Home = React.forwardRef((props, homeRef) => {
   return (
     <div className="home" ref={homeRef}>
+      <div className="line"></div>
       <div className="banner-container">
         <div className="title-main">The Boogeyman Invesitagtion</div>
       </div>
 
-      <div className="main-img">
+      <div className="-img">
         <div className="border">
           <img src={bordertop} alt="" className="banner-decor" />
         </div>

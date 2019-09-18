@@ -1,12 +1,14 @@
 .home {
-  margin-top: 9rem;
+  margin-top: 6rem;
 }
 .banner-container {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-
+.line{
+padding-top: 6rem;
+}
 .title-main {
   font-size:8rem;
   color: var(--font-color3);

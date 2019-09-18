@@ -18,7 +18,10 @@ const About = React.forwardRef((props, aboutRef) => {
             mind we have decided to write books that we hope everyone can enjoy.
           </div>
         </div>
-        <img src={authors} alt="authors pic" className="authors-img" />
+        <div className="img-container">
+        <img src={authors} alt="authors-pic" className="authors-img" />
+        </div>
+        
       </div>
     </div>
   );
