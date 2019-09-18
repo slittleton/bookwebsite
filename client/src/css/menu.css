@@ -4,7 +4,6 @@
   justify-content: center;
 }
 .menu-bar{
-  background-color: black;
   width: 100%;
   position: fixed;
 }
@@ -28,7 +27,7 @@
 .img-btn{
   height: 60px;
   transition: all 500ms;
-  z-index:10;
+
 }
 .img-btn:hover{
   height: 65px;
