@@ -5,8 +5,13 @@ const Contact = React.forwardRef((props, contactRef) => {
   return (
     <div className="contact" ref={contactRef}>
       <div className="title">Contact</div>
-      <div className="subtitle lg-margin" >Email: <a className="email" href="mailto:girlspok77@gmail.com">girlspok77@gmail.com</a></div>
-      
+      <div className="subtitle lg-margin">
+        Email:{" "}
+        <a className="email" href="mailto:	katiaandscott@gmail.com">
+          katiaandscott@gmail.com
+        </a>
+      </div>
+
       {/* <div className="contact-form">
         <form className="form">
           <div className="input-container">
@@ -23,7 +28,6 @@ const Contact = React.forwardRef((props, contactRef) => {
           </div>
         </form>
       </div> */}
-
     </div>
   );
 });

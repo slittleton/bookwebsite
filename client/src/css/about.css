@@ -23,3 +23,11 @@
   border:8px solid var(--font-color2);
 
 }
+
+
+@media (max-width: 1000px) {
+  .about-container{
+    display:grid;
+  }
+
+}

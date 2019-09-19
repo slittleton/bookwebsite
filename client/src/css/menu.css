@@ -1,5 +1,4 @@
 .menu{
-
   display: flex;
   justify-content: center;
 }
@@ -14,7 +13,6 @@
 .list-item{
   list-style: none;
   cursor: pointer;
-
   margin: .5rem;
   position: relative;
 }
@@ -46,4 +44,30 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(37, 37, 37);
   margin-top:.2rem;
+}
+
+.small-menubtn{
+  display:none;
+  transition: all 500ms;
+}
+
+@media (max-width: 1000px) {
+  .img-btn{
+    display:none;
+  }
+  .small-menubtn{
+    display:flex;
+    box-shadow: 0px 0px 15px 15px rgba(0, 140, 255, 0.2);
+    background-color: rgba(0, 140, 255, 0.2);
+    border-radius:1.25rem
+  }
+  .small-menubtn:hover{
+    transition: all 500ms;
+    box-shadow: 0px 0px 15px 15px rgba(187, 255, 0, 0.2);
+    background-color: rgba(187, 255, 0, 0.2);
+    border-radius:1.25rem;
+  }
+  .menu-bar{
+    background-color: black;
+  }
 }

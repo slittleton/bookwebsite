@@ -11,7 +11,7 @@ const Home = React.forwardRef((props, homeRef) => {
     <div className="home" ref={homeRef}>
       <div className="line"></div>
       <div className="banner-container">
-        <div className="title-main">The Boogeyman Invesitagtion</div>
+        <div className="title-main">The Boogeyman Investigation</div>
       </div>
 
       <div className="-img">
