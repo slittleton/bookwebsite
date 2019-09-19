@@ -29,5 +29,20 @@
   .about-container{
     display:grid;
   }
-
+  .authors{
+    padding: 0;
+  }
+  .img-container{
+    display: flex;
+    justify-content: center;
+  }
+  .authors-img{
+    width: 80%;
+    border-radius:50%;
+    border:8px solid var(--font-color2);
+  }
+  .img-container{
+    width:100%;
+    margin-top: 5rem;
+  }
 }
